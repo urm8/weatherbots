@@ -1,5 +1,24 @@
 # Weather Trader — A Bloomberg-Style Terminal for Trading Weather on Kalshi
 
+## DeepSeek paper-agent fork
+
+This fork adds a standalone **paper-only DeepSeek agent** that reviews Weatherbots
+forecasts, applies deterministic risk limits, and tracks whether realized
+simulated profit covers estimated API costs. It does **not** place real bets or
+pay API bills, and profitability is not guaranteed.
+
+```bash
+python3 -m weather_agent demo --db /tmp/weather-agent-demo.sqlite
+```
+
+The demo is synthetic, offline, and requires no credentials or third-party Python
+packages. See the [agent guide](documentation/deepseek_agent.md) for paid model
+review and cost controls. The
+[prediction-market-analysis submodule](documentation/prediction_market_research.md)
+is pinned research material, not a runtime dependency or validated strategy.
+
+---
+
 **A real-time trading terminal and automated bot for [Kalshi](https://kalshi.com) daily high-temperature markets.** One dark-mode dashboard puts every edge in front of you: the live bracket race for each city, the intraday projected-high chart, per-source forecast accuracy, open positions with live P&L, and the full decision log — the kind of at-a-glance command center weather traders normally build by hand.
 
 ![Weather Trader Terminal — a Bloomberg-style dashboard for Kalshi weather markets: per-city bracket race, intraday projected-high chart, source accuracy, open positions with live P&L, and the decision log.](docs/img/dashboard.png)
