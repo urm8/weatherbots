@@ -1,0 +1,14 @@
+{
+  "id": "SYNTHETIC-REFERENCE-NOT-LIVE",
+  "city": "ny",
+  "date": "2026-10-25",
+  "quoted_at": "2026-10-25T16:00:00+00:00",
+  "closes_at": "2026-10-26T00:00:00+00:00",
+  "lower_f": 70,
+  "upper_f": 75,
+  "yes_ask": 0.2,
+  "fee_per_contract": 0.01,
+  "settlement_source": "NWS_CLI",
+  "station": "KNYC",
+  "rules_verified": true
+}

@@ -1,0 +1,3 @@
+[submodule "references/prediction-market-analysis"]
+	path = references/prediction-market-analysis
+	url = https://github.com/Jon-Becker/prediction-market-analysis.git
